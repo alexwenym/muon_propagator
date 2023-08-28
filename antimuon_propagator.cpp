@@ -10,8 +10,8 @@ using namespace std;
 int main(int argc, char *argv[]){
 
     // particle
-    auto mu_def = MuMinusDef();
-    cout << "Propagating MuMinus..." << endl; 
+    auto mu_def = MuPlusDef();
+    cout << "Propagating MuPlus..." << endl; 
 
     // open file containing muon energies
     std::string LI_data_file(argv[1]);
@@ -79,7 +79,7 @@ int main(int argc, char *argv[]){
         << vtx_x << " " << vtx_y << " " << vtx_z << " "
         << propagated_distance/100 << " " << dist_to_detector/100 << " " << energy_at_detector/1000 << " "
         << 1.0 << endl; 
-        // the weight is set to 1 when we are not considering it.
+
     }
 
     cout << "Done propagating. File saved to " << output_data_file << "." << endl; 

@@ -3,7 +3,7 @@
 	{
 		"cuts":
 		{
-			"e_cut": 500,
+			"e_cut": "inf",
 			"v_cut": 1,
 			"cont_rand": false
 		}
